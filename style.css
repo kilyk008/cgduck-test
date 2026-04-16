@@ -1,1 +1,186 @@
-/* Add styles here */
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.blue-text {
+    color: #007BFF;
+}
+
+.cta-buttons button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 1rem;
+}
+
+#open-simple-inquiry {
+    background-color: #007BFF;
+    color: white;
+}
+
+#open-quote-modal {
+    background-color: #fff;
+    color: #007BFF;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 100px 2rem 2rem;
+    min-height: 500px;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+.modal-content form div {
+  margin-bottom: 1rem;
+}
+
+.modal-content form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.modal-content form input, .modal-content form textarea, .modal-content form select {
+  width: 100%;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
