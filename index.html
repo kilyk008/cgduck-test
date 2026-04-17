@@ -16,6 +16,7 @@
                 <li><a href="#procedure">진행절차</a></li>
                 <li><a href="#reviews">고객후기</a></li>
                 <li><a href="#hope-package">희망리턴패키지</a></li>
+                <li><a href="#partnership">제휴문의</a></li>
                 <li><a href="#" id="open-quote-modal-nav">견적문의</a></li>
             </ul>
         </nav>
@@ -49,6 +50,32 @@
             <h2>희망리턴패키지</h2>
             <p>소상공인을 위한 희망리턴패키지 정보를 안내합니다.</p>
             <!-- Add more content here -->
+        </section>
+
+        <section id="partnership" class="content-section">
+            <h2>제휴 문의</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">철거덕과 함께 성장할 파트너사를 모십니다.</p>
+            <div class="partnership-form-container">
+                <form action="https://formspree.io/f/xdaygkqz" method="POST">
+                    <div class="form-group">
+                        <label for="partner-name">업체명 / 성함</label>
+                        <input type="text" id="partner-name" name="name" placeholder="업체명 또는 성함을 입력해주세요" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-email">이메일 주소</label>
+                        <input type="email" id="partner-email" name="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-phone">연락처</label>
+                        <input type="tel" id="partner-phone" name="phone" placeholder="010-0000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="partner-message">문의 내용</label>
+                        <textarea id="partner-message" name="message" rows="5" placeholder="제휴 관련 문의 내용을 상세히 적어주세요" required></textarea>
+                    </div>
+                    <button type="submit" class="partnership-submit-button">제휴 문의하기</button>
+                </form>
+            </div>
         </section>
     </main>
 
